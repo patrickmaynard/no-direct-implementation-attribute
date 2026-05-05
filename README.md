@@ -36,5 +36,6 @@ todo. Assume we have docker
 * The allowedExtenders list is optional. If not provided, all other interfaces are allowed to extend.
 * The extension should live in this repository. The static analysis rules and composer installer for them
   should live in its own repository to avoid things becoming confusing for people who want to try the system
-  out. 
+  out.
+* An extensive test rig for this extension should live in a third repository to keep this one clean. 
 * etc.,.
