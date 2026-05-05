@@ -13,12 +13,12 @@ An example of how this would be used:
 
 declare(strict_types=1);
 
-namespace App\Service\Interface;
+namespace My\Namespace\Interface;
 
 //The allowedExtenders list is optional.
 //If not provided, all other interfaces are allowed to extend.
 
-#[NoDirectImplementation(allowedExtenders: 'My\Namespace\HasWeeklyCalendarInterface,My\Namespace\HasMonthlyCalendarInterface')]
+#[NoDirectImplementation(allowedExtenders: 'My\Other\Namespace\HasWeeklyCalendarInterface,My\Other\Namespace\HasMonthlyCalendarInterface')]
 interface HasCalendarInterface
 {
   public function getCalendar(): string;
