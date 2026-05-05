@@ -1,5 +1,5 @@
 # NoDirectImplementation attribute
-This is a stube repository for what will hopefully soon be a PHP extension that allows the langauge to parse a new attribute 
+This is a stub repository for what will hopefully soon be a PHP extension that allows the langauge to parse a new attribute 
 that is applied to interfaces, specifying that they must be extended by other interfaces rather than being implemented 
 directly. If a class tries to implement such an interface, a new type of exception should be thrown. 
 
