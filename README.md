@@ -25,13 +25,16 @@ interface HasCalendarInterface
 
 ```
 
-### Instructions for installation
+### Instructions for installation of extension
 
-todo. Assume we have docker and composer, along with one of the static analysis tools mentioned above. 
+todo. Assume we have docker 
 
 ### A few things to keep in mind: 
 
 * The allowedExtenders list can contain a mix of interfaces in the same namespace and interfaces in other
   namespaces. Only the latter require fully qualified class names.
 * The allowedExtenders list is optional. If not provided, all other interfaces are allowed to extend.
+* The extension should live in this repository. The static analysis rules and composer installer for them
+  should live in its own repository to avoid things becoming confusing for people who want to try the system
+  out. 
 * etc.,.
