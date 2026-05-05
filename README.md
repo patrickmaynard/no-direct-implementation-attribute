@@ -1,5 +1,7 @@
 # no-direct-implementation-attribute
-This is a stube repository for what will hopefully soon be a PHP extension that allows the langauge to parse a new attribute that is applied to interfaces, specifying that they must be extended by other interfaces rather than being implemented directly. 
+This is a stube repository for what will hopefully soon be a PHP extension that allows the langauge to parse a new attribute 
+that is applied to interfaces, specifying that they must be extended by other interfaces rather than being implemented 
+directly. If a class tries to implement such an interface, a new type of exception should be thrown. 
 
 I will vibe code a proof-of-concept extension when time allows, with the hope that this will eventually be adopted as a feature of the language. 
 
@@ -15,9 +17,6 @@ declare(strict_types=1);
 
 namespace My\Namespace\Interface;
 
-//The allowedExtenders list is optional.
-//If not provided, all other interfaces are allowed to extend.
-
 #[NoDirectImplementation(allowedExtenders: 'My\Other\Namespace\HasWeeklyCalendarInterface,My\Other\Namespace\HasMonthlyCalendarInterface')]
 interface HasCalendarInterface
 {
@@ -25,3 +24,10 @@ interface HasCalendarInterface
 }
 
 ```
+
+### A few things to keep in mind: 
+
+* The allowedExtenders list can contain a mix of interfaces in the same namespace and interfaces in other
+  namespaces. Only the latter require fully qualified class names.
+* The allowedExtenders list is optional. If not provided, all other interfaces are allowed to extend.
+* etc.,.
