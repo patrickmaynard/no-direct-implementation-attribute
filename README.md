@@ -25,6 +25,10 @@ interface HasCalendarInterface
 
 ```
 
+### Instructions for installation
+
+todo. Assume we have docker and composer, along with one of the static analysis tools mentioned above. 
+
 ### A few things to keep in mind: 
 
 * The allowedExtenders list can contain a mix of interfaces in the same namespace and interfaces in other
