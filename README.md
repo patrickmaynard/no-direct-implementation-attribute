@@ -5,7 +5,7 @@ directly. If a class tries to implement such an interface, a new type of excepti
 
 I will vibe code a proof-of-concept extension when time allows, with the hope that this will eventually be adopted as a feature of the language after a thorough audit by the community. 
 
-Fallback rules for Psalm and PHPStan should also be provided so that this can be widely adopted. 
+Fallback rules for Psalm and PHPStan (and a composer-based installer for them!) should also be provided so that this can be widely adopted. 
 
 An example of how this would be used: 
 
